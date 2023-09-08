@@ -1,0 +1,2 @@
+SELECT mesa.Id_Mesa ,mesa.Estado, mesa.Mesero_Id_Mesero from mesa
+where Estado='Disponible';
