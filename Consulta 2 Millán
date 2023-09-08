@@ -1,0 +1,5 @@
+select detalle_de_orden.Orden_Id_Orden ,detalle_de_orden.Orden_Total, detalle_de_orden.Plato_Id_Plato, plato.Factura_Id_Factura, factura.Mesa_Mesero_Id_Mesero 
+from detalle_de_orden left join plato on detalle_de_orden.Plato_Id_Plato = plato.Id_Plato left join factura on plato.Factura_Id_Factura =  factura.Id_Factura;
+
+
+
