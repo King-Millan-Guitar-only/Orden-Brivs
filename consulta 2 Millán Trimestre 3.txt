@@ -1,0 +1,4 @@
+select historial.Id_Historial, factura.Id_Factura, historial.Verificacion_Id_Caja, plato.Id_Plato,
+plato.Nombre_plato, plato.Precio from historial left join factura
+on historial.Verificacion_Id_Caja = factura.Verificacion_Id_Caja left join plato
+on factura.Id_Factura = plato.Factura_Id_Factura;
